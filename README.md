@@ -2,14 +2,14 @@
 
 A Java console-based Library Management System that manages books, library members, book issuing and returning, and transaction records.
 
-The project demonstrates important Object-Oriented Programming concepts along with file handling, exception handling, searching, sorting, and collections in Java.
+The project demonstrates Object-Oriented Programming concepts along with file handling, exception handling, collections, searching, and sorting in Java.
 
 ## Features
 
 * Add and view books
 * Register student and faculty members
 * View registered members
-* Issue books to members
+* Issue books
 * Return books
 * Maintain transaction records
 * Search books by Book ID
@@ -21,7 +21,7 @@ The project demonstrates important Object-Oriented Programming concepts along wi
 ## Technologies Used
 
 * **Language:** Java
-* **Programming Concepts:** OOP, Encapsulation, Inheritance, Polymorphism
+* **Concepts:** OOP, Encapsulation, Inheritance, Polymorphism
 * **Collections:** HashMap, ArrayList
 * **File Handling:** FileReader, FileWriter, BufferedReader
 * **Data Storage:** CSV files
@@ -32,32 +32,32 @@ The project demonstrates important Object-Oriented Programming concepts along wi
 
 ```text
 Library-Inventory-Management-System/
-│
-├── Main.java
-├── Library.java
-│
-├── models/
-│   ├── Book.java
-│   ├── Member.java
-│   ├── StudentMember.java
-│   ├── FacultyMember.java
-│   └── Transaction.java
-│
-├── exceptions/
-│   ├── BookNotAvailableException.java
-│   └── MemberLimitExceededException.java
-│
-├── utils/
-│   ├── FileManager.java
-│   └── BookTitleComparator.java
-│
-├── data/
-│   ├── books.csv
-│   ├── members.csv
-│   └── transactions.csv
-│
-├── .gitignore
-└── README.md
+
+Main.java
+Library.java
+
+models/
+    Book.java
+    Member.java
+    StudentMember.java
+    FacultyMember.java
+    Transaction.java
+
+exceptions/
+    BookNotAvailableException.java
+    MemberLimitExceededException.java
+
+utils/
+    FileManager.java
+    BookTitleComparator.java
+
+data/
+    books.csv
+    members.csv
+    transactions.csv
+
+.gitignore
+README.md
 ```
 
 ## Main Menu
@@ -109,10 +109,10 @@ The system uses CSV files to store data:
 
 ## Exception Handling
 
-The project uses custom exceptions to handle important situations:
+The project uses custom exceptions for important situations:
 
-* `BookNotAvailableException` — used when a book cannot be issued because it is unavailable.
-* `MemberLimitExceededException` — used when a member has reached their borrowing limit.
+* `BookNotAvailableException` — handles cases where a book cannot be issued because it is unavailable.
+* `MemberLimitExceededException` — handles cases where a member has reached their borrowing limit.
 
 ## Searching and Sorting
 
@@ -134,11 +134,9 @@ The following features were tested:
 * Viewing transactions
 * Searching books
 * Sorting books by title
-* Saving data and exiting the application
+* Saving data and exiting
 
 ## Future Improvements
-
-Possible future enhancements include:
 
 * Graphical User Interface (GUI)
 * MySQL database integration
@@ -153,4 +151,3 @@ Possible future enhancements include:
 
 VIT Bhopal University
 Computer Science Engineering (AI & ML)
-
