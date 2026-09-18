@@ -1,12 +1,12 @@
-\# Project Statement
+# Project Statement
 
 
 
-\## Library Management System
+## Library Management System
 
 
 
-\### Problem Statement
+### Problem Statement
 
 
 
@@ -14,7 +14,7 @@ Managing books, members, and borrowing activities manually can be time-consuming
 
 
 
-\### Objective
+### Objective
 
 
 
@@ -22,49 +22,49 @@ The objective of this project is to develop a console-based Library Management S
 
 
 
-\### Main Features
+### Main Features
 
 
 
-\- Add and manage books
+- Add and manage books
 
-\- Register library members
+- Register library members
 
-\- Issue books to members
+- Issue books to members
 
-\- Return books
+- Return books
 
-\- View transaction records
+- View transaction records
 
-\- Search books using Book ID
+- Search books using Book ID
 
-\- Sort books alphabetically by title
+- Sort books alphabetically by title
 
-\- Store data using CSV files
+- Store data using CSV files
 
-\- Handle errors using custom exceptions
-
-
-
-\### Technologies Used
+- Handle errors using custom exceptions
 
 
 
-\- Java
-
-\- Object-Oriented Programming
-
-\- Collections
-
-\- File Handling
-
-\- Exception Handling
-
-\- CSV Files
+### Technologies Used
 
 
 
-\### Expected Outcome
+- Java
+
+- Object-Oriented Programming
+
+- Collections
+
+- File Handling
+
+- Exception Handling
+
+- CSV Files
+
+
+
+### Expected Outcome
 
 
 
