@@ -1,33 +1,37 @@
-# Library-Inventory-Management-System
+# Library Management System
 
-# LIBRARY-MANAGEMENT-SYSTEM
+A Java console-based Library Management System that manages books, library members, book issuing and returning, and transaction records.
 
-A Java console-based application that manages books, library members, book issuing/returning, and transaction records. The project demonstrates Object-Oriented Programming (OOP), inheritance, exception handling, collections, file handling, searching, and sorting.
+The project demonstrates important Object-Oriented Programming concepts along with file handling, exception handling, searching, sorting, and collections in Java.
 
 ## Features
 
 * Add and view books
 * Register student and faculty members
-* View member details and borrowing limits
-* Issue and return books
-* Maintain transaction history
+* View registered members
+* Issue books to members
+* Return books
+* Maintain transaction records
 * Search books by Book ID
 * Sort books alphabetically by title
-* Save data using CSV files
+* Save and load data using CSV files
 * Custom exception handling
+* Different borrowing limits for students and faculty
 
 ## Technologies Used
 
 * **Language:** Java
-* **Concepts:** OOP, Inheritance, Encapsulation, Exception Handling
+* **Programming Concepts:** OOP, Encapsulation, Inheritance, Polymorphism
 * **Collections:** HashMap, ArrayList
-* **File Handling:** CSV (FileReader, FileWriter, BufferedReader)
+* **File Handling:** FileReader, FileWriter, BufferedReader
+* **Data Storage:** CSV files
+* **Exception Handling:** Custom Exceptions
 * **IDE:** VS Code / IntelliJ IDEA
 
 ## Project Structure
 
 ```text
-Library-Management-System/
+Library-Inventory-Management-System/
 │
 ├── Main.java
 ├── Library.java
@@ -44,53 +48,22 @@ Library-Management-System/
 │   └── MemberLimitExceededException.java
 │
 ├── utils/
-│   └── FileManager.java
+│   ├── FileManager.java
+│   └── BookTitleComparator.java
 │
 ├── data/
 │   ├── books.csv
 │   ├── members.csv
 │   └── transactions.csv
 │
+├── .gitignore
 └── README.md
 ```
 
-## How to Run
+## Main Menu
 
-1. Clone or download the repository.
-2. Open the project in VS Code or IntelliJ IDEA.
-3. Compile all Java files:
+The application provides the following options:
 
-```bash
-javac Main.java Library.java models/*.java exceptions/*.java utils/*.java
-```
-
-4. Run the project:
-
-```bash
-java Main
-```
-
-## Testing
-
-Test the following features from the main menu:
-
-1. Add Book
-2. View Books
-3. Register Member
-4. View Members
-5. Issue Book
-6. Return Book
-7. View Transactions
-8. Search Book
-9. Sort Books by Title
-10. Save & Exit
-
-## Sample Output
-
-```text
-============================
- LIBRARY MANAGEMENT SYSTEM
-============================
 1. Add Book
 2. View Books
 3. Register Member
@@ -101,20 +74,83 @@ Test the following features from the main menu:
 8. Save & Exit
 9. Search Book
 10. Sort Books by Title
+
+## How to Run
+
+### 1. Clone the Repository
+
+Clone the GitHub repository to your computer.
+
+### 2. Open the Project
+
+Open the project folder in VS Code, IntelliJ IDEA, or another Java IDE.
+
+### 3. Compile the Project
+
+Open the terminal in the project folder and run:
+
+```text
+javac Main.java Library.java models/*.java exceptions/*.java utils/*.java
 ```
+
+### 4. Run the Application
+
+```text
+java Main
+```
+
+## Data Storage
+
+The system uses CSV files to store data:
+
+* `books.csv` — stores book information and availability
+* `members.csv` — stores member information and member type
+* `transactions.csv` — stores issue and return transactions
+
+## Exception Handling
+
+The project uses custom exceptions to handle important situations:
+
+* `BookNotAvailableException` — used when a book cannot be issued because it is unavailable.
+* `MemberLimitExceededException` — used when a member has reached their borrowing limit.
+
+## Searching and Sorting
+
+The system provides:
+
+* **Search Book:** Finds a book using its Book ID.
+* **Sort Books by Title:** Arranges books alphabetically using a custom comparator.
+
+## Testing
+
+The following features were tested:
+
+* Adding books
+* Viewing books
+* Registering members
+* Viewing members
+* Issuing books
+* Returning books
+* Viewing transactions
+* Searching books
+* Sorting books by title
+* Saving data and exiting the application
 
 ## Future Improvements
 
+Possible future enhancements include:
+
 * Graphical User Interface (GUI)
-* Database integration (MySQL)
-* Login and authentication
+* MySQL database integration
+* User login and authentication
 * Fine calculation for overdue books
-* Advanced reporting and analytics
+* Advanced search and reporting
+* Admin dashboard
 
 ## Author
 
 **Shreya Baghel**
 
-Registration no. - 25BAI11008
-
 VIT Bhopal University
+Computer Science Engineering (AI & ML)
+
